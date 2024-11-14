@@ -1,0 +1,263 @@
+/* Скидання стилів для кращої кросбраузерної підтримки */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Основний контейнер */
+main {
+    flex: 1;
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Заголовок і навігація */
+header {
+    background-color: #34495e;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+header nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+header nav ul li a:hover {
+    color: #34495e;
+    background-color: #f39c12;
+}
+
+/* Вступний розділ */
+.intro h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 0.5em;
+}
+
+.content h2 {
+    font-size: 2em;
+    color: #34495e;
+    margin-bottom: 0.5em;
+}
+
+/* Галерея логотипів */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.logo {
+    border: 1px solid #ddd;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0.5em;
+}
+
+/* Стиль для рекламних текстів та моделей */
+.ad-text, .model-result {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.ad-text:hover, .model-result:hover {
+    transform: translateY(-5px);
+}
+
+h3 {
+    color: #34495e;
+    margin-bottom: 0.5em;
+}
+
+.conclusion {
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+/* Футер */
+footer {
+    background-color: #34495e;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1em;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .intro h1 {
+        font-size: 2em;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    header nav ul li a {
+        padding: 0.5em;
+    }
+}
+
+/* Стиль для туристичного маршруту */
+.route-intro {
+    font-size: 1.2em;
+    color: #7f8c8d;
+    margin-bottom: 2em;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.stop {
+    margin-bottom: 2em;
+    background-color: #ffffff;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.stop:hover {
+    transform: translateY(-5px);
+}
+
+.stop h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5em;
+}
+
+.stop-description {
+    font-size: 1em;
+    color: #34495e;
+    margin-bottom: 1em;
+}
+
+.stop img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Секція Hero */
+.hero {
+    background-color: #34495e;
+    color: #ecf0f1;
+    padding: 4em 1em;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero-description {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: #f39c12;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Секція огляду сторінок */
+.overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    padding: 2em;
+    max-width: 900px;
+    margin: 2em auto;
+}
+
+.overview-item {
+    background-color: #ffffff;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.overview-item:hover {
+    transform: translateY(-5px);
+}
+
+.overview-item h2 {
+    color: #2c3e50;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.overview-item p {
+    color: #34495e;
+    font-size: 1em;
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 768px) {
+    .overview {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-description {
+        font-size: 1.3em;
+    }
+}
